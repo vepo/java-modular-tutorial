@@ -23,3 +23,12 @@ Look the `CLIApp` class. Using the `ServiceLoader`, you can load all implementat
 ```
 ServiceLoader<Weather> loader = ServiceLoader.load(Weather.class);
 ```
+
+
+## To Execute without maven
+
+```
+java -cp cli-1.0-SNAPSHOT.jar:weather-yahoo-1.0-SNAPSHOT.jar:weather-1.0-SNAPSHOT.jar:weather-open-weather-map-1.0-SNAPSHOT.jar:/home/victor/.m2/repository/com/mashape/unirest/unirest-java/1.4.9/unirest-java-1.4.9.jar:/home/victor/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/home/victor/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar:/home/victor/.m2/repository/org/apache/httpcomponents/httpcore-nio/4.4.4/httpcore-nio-4.4.4.jar:/home/victor/.m2/repository/org/apache/httpcomponents/httpasyncclient/4.1.1/httpasyncclient-4.1.1.jar:/home/victor/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/home/victor/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar org.vepo.modular.cli.CLIApp -Dexec.args="São Paulo"
+```
+
+That was we call **Classpath Hell**.
